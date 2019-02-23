@@ -49,7 +49,7 @@ for (var x = 0; x < word[index].length; x++) {
 //ON KEY UP FUNCTION
 
 document.onkeyup = function (event) {
-    console.clear();
+   
     var userGuess = event.key;
     var fullWord = "";
 
