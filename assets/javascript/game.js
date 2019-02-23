@@ -36,7 +36,7 @@ var winsText = document.getElementById("wins-text");
 var currentText = document.getElementById("current-text");
 var guessesLeftText = document.getElementById("guessesleft-text");
 var guessesText = document.getElementById("guesses-text");
-var index = Math.floor(Math.random() * 26);
+var index = Math.floor(Math.random() * 25);
 var tempWord = [word[index].length];
 var correctLetters = 0;
 
@@ -97,7 +97,7 @@ document.onkeyup = function (event) {
         guessesLeft = 10;
         guessedLetters = "";
         correctLetters = 0;
-        index = Math.floor(Math.random() * 26);
+        index = Math.floor(Math.random() * 25);
         tempWord = [word[index].length];
 
         for (var x = 0; x < word[index].length; x++) {
