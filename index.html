@@ -6,20 +6,47 @@
     <title>Word Guess Game - Matrix Theme</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
 </head>
 <body>
+        <div class="fullscreen-bg">
+                <video loop muted autoplay poster="assets/images/matrixcode.mp4" class="fullscreen-bg__video">
+                  
+                    <source src="assets/images/matrixcode.mp4" type="video/mp4">
+                  
+                </video>
+        </div>
 
-    <h1>Welcome to The Matrix Word Game!</h1>
-    <h4 id="alert-text">Press a key to start guessing!</h4>
+    <div class="jumbotron text-center">
+        <div class="container">
+          <h1 class="display-4">Enter the Matrix Word Game!</h1>
+          <p class="lead alert-text"><span id="alert-text">Press a key to start guessing!</span></p>
+        </div>
+      </div>
 
-    <div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header current-text">Current Word: <span id="current-text"></span>
+    
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Wins: <span id="wins-text"></span></li>
+                    <li class="list-group-item">Number of Guesses Remaining: <span id="guessesleft-text"></span></li>
+                    <li class="list-group-item">Letters Already Guessed: <span id="guesses-text"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div>
         Wins: <span id="wins-text"></span></br>
         Current Word: <span id="current-text"></span></br>
         Number of Guesses Remaining: <span id="guessesleft-text"></span></br>
         Letters Already Guessed: <span id="guesses-text"></span></br>
 
-    </div>
+    </div> -->
 
     <script src="assets/javascript/game.js"></script>
     
