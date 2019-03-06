@@ -132,7 +132,7 @@ document.onkeyup = function (event) {
                 tempWord[x] = "_";
             }
 
-            alertText.textContent = "You Guessed the Word right! Press ENTER Key to start a new game!";
+            alertText.textContent = "You Guessed the Word ( " +fullWord +" ) right! Press ENTER Key to start a new game!";
             winsText.textContent = wins;
             currentText.textContent = "";
             guessesLeftText.textContent = "";
